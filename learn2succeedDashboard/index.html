@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn2succeed</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lime">
+    <div class="navbar-fixed">
+        <nav class="nav white">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Learn2succeed</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main id="main" class="col s12 row">
+        <section id="home" class="view hide">
+            <div class="navbar-fixed">
+                <nav class="white">
+                    <div class="nav-wrapper container">
+                        <ul class="right">
+                            <li>
+                                <a href="#!">
+                                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light pink accent-3">
+                                        <i class="icons ion-plus"></i>
+                                    </a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="card-panel center">
+                    <img src="./images/JAMB-Logo.png" alt="JAMB-Logo" class="responsive-img">
+                    <h5>JAMB <br> <sub>Joint Admission and Matriculation Board</sub></h5>
+                    <p class="flow-text">1987 - 2016</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="card-panel center">
+                    <img src="./images/Waec_logo.png" alt="WAEC-Logo" class="responsive-img">
+                    <h5>WAEC <br> <sub>West African Examination Council</sub></h5>
+                    <p class="flow-text">1989 - 2016</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="card-panel center">
+                    <img src="./images/toefl.svg" alt="TOEFL LOGO" style="margin-bottom: 11.5rem;">
+                    <h5>TOEFL <br> <sub>Test of English as a foreign language</sub></h5>
+                    <p class="flow-text">1993 - 2016</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l3">
+                <div class="card-panel center">
+                    <img src="./images/Neco-logo.png" alt="NECO-Logo" class="responsive-img">
+                    <h5>NECO <br> <sub>National Examination Council</sub></h5>
+                    <p class="flow-text">1988 - 2016</p>
+                </div>
+            </div>
+        </section>
+        <section id="exam-panel" class="view">
+            <div class="navbar-fixed">
+                <nav class="green">
+                    <div class="nav-wrapper container">
+                        <ul class="left">
+                            <li><a class="white-text waves-effect waves-light" href="#!">JAMB</a></li>
+                            <li><a class="white-text waves-effect waves-light" href="#!">WAEC</a></li>
+                            <li><a class="white-text waves-effect waves-light" href="#!">NECO</a></li>
+                            <li><a class="white-text waves-effect waves-light" href="#!">TOEFL</a></li>
+                            <li>
+                                <a class="white-text waves-effect waves-light" href="#!">
+                                    <i class="icon right ion-plus"></i> NEW
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="right">
+                            <li>
+                                <a href="#!">
+                                    <a class="btn-floating btn-large halfway-fab waves-effect waves-light pink accent-3">
+                                        <i class="icons ion-plus"></i>
+                                    </a>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col l12">
+                <div class="card-panel row" style="margin-bottom: 0;">
+                    <div id="exam-panel_screen1" class="hide">
+                        <div class="col l3" style="border-right: 1px solid #ded8d8;">
+                            <img src="./images/JAMB-Logo.png" alt="JAMB-Logo" class="responsive-img">
+                            <h4 class="center">JAMB</h4>
+                            <form id="exam_main_details" onsubmit="alert('Details submited'); return false;">
+                                <div class="row" style="margin-bottom: 0;">
+                                    <div class="input-field col s6">
+                                        <input placeholder="Start Year" id="examStart_date" type="text" class="validate" value="1988" required>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Latest Year" id="examStop_date" type="text" class="validate" value="2016" required>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input placeholder='Enter Subjects separated by ","' id="exam_subjects" type="text" class="validate" required>
+                                    </div>
+                                    <button class="col s12 btn green white-text waves-effect waves-light" type="submit">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col l9">
+                            <h4 class="center-align">
+                                <u>Exam Center</u>
+                            </h4>
+                            <p class="flow-text center-align">
+                                Here is where you get to fill Questions based on Years and Subjects set at your left side of this page. <br><br>                                If you are ready to start filling out the questions, kindly press "START NOW"
+                            </p>
+                            <p class="center-align">
+                                <button class="btn-large waves-effect waves-light green darken-2 white-text">START NOW</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="exam-panel_screen2" class="hide">
+                        <div class="col l9">
+                            <h4 class="center-align">
+                                Just before Starting
+                                <i class="icon ion-alert-circled"></i>
+                            </h4>
+                            <p class="flow-text center-align">
+                                Lets know the Exam year and Subject to get started filling in our preparatory questions &amp; answers
+                                <i class="icon ion-happy-outline"></i>
+                            </p>
+                            <p class="center-align">
+                                <button class="btn-large waves-effect waves-light green darken-2 white-text">Let&rsquo;s do this!  &nbsp; &nbsp;<i class="icon ion-ios-play"></i></button>
+                            </p>
+                        </div>
+                        <div class="col l3" style="border-left: 1px solid #ded8d8;">
+                            <img src="./images/JAMB-Logo.png" alt="JAMB-Logo" class="responsive-img">
+                            <h4 class="center">JAMB</h4>
+                            <form id="exam_question_details" onsubmit="alert('Details submited'); return false;">
+                                <div class="row" style="margin-bottom: 0;">
+                                    <div class="input-field col s6">
+                                        <select id="select-exam-year" required>
+                                            <option value="" disabled selected>Select year</option>
+                                            <option value="1">2013</option>
+                                            <option value="2">2014</option>
+                                            <option value="3">2015</option>
+                                            <option value="3">2016</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col s6" required>
+                                        <select id="select-exam-subject">
+                                            <option value="" disabled selected>Select subject</option>
+                                            <option value="1">Biology</option>
+                                            <option value="2">Physics</option>
+                                            <option value="3">Chemistry</option>
+                                            <option value="3">Mathematics</option>
+                                        </select>
+                                    </div>
+                                    <button class="col s12 btn green white-text waves-effect waves-light" type="submit">Save &nbsp; <i class="icon ion-ios-box"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="exam-panel_screen3" class="">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

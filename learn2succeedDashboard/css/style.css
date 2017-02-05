@@ -1,0 +1,64 @@
+nav .container {
+  width: 95%;
+}
+
+nav a.brand-logo,
+nav ul li a {
+  color: #1b5e20 !important;
+}
+
+nav .tabs.tabs-transparent .tab a,
+nav .tabs.tabs-transparent .tab.disabled a,
+nav .tabs.tabs-transparent .tab.disabled a:hover {
+  color: #1b5e20 !important;
+}
+
+.shift-top {
+  margin-top: 3.5rem;
+}
+
+#main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  margin-bottom: 0rem;
+}
+
+.card-panel img.responsive-img {
+    margin: auto;
+    display: block;
+    max-height: 15.4rem;
+    width: 80%;
+}
+
+.card-panel h5 sub {
+  font-size: 1rem;
+}
+
+.card-panel {
+    min-height: 30rem;
+}
+
+.legible {
+
+}
+
+input.editables {
+
+}
+
+.input-field {
+    margin-top: -1rem;
+}
+
+x1, input.x1 {
+    font-size: 1rem !important;
+}
+x2, input.x2 {
+    font-size: 2rem !important;
+}
+x3, input.x3 {
+    font-size: 3rem !important;
+}
+x4, input.x4 {
+    font-size: 4rem !important;
+}

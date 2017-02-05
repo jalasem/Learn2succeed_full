@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz Summary</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lime">
+  <ul id="slide-out" class="grey lighten-5 side-nav">
+    <li>
+      <div class="userView">
+        <a id="bhk" href="#!user"><i class="icon ion-person"></i></a>
+        <a id="bhl" href="#!name"><span class="blue-grey-text name text-darken-4">John Doe</span></a>
+        <a href="#!" id="bhm"><span class="blue-grey-text text-darken-4">Rank: 325</span></a>
+      </div>
+    </li>
+    <li><a href="index.html"><i class="icon left ion-ios-home"></i>Home</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="profile.html"><i class="icon left ion-bowtie"></i> View Profile</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="./leaderboard.html"><i class="icon left ion-android-arrow-up"></i>Leaderboard</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="#!"><i class="icon left ion-android-settings"></i>Settings</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav class="amber darken-4">
+      <div class="nav-wrapper container">
+        <a href="#" data-activates="slide-out" class="left button-collapse"><i class="icons ion-navicon"></i></a>
+        <a href="index.html" class="brand-logo">
+          <i class="icon ion-university left"></i> Learn2Succeed
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="row" id="exam-selected">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content center">
+          <p class="flow-text quiz_comment">
+            Well done!
+            <br> With more practice, You can perform better!
+          </p>
+          <h1 class="withLogo center"><i class="icon ion-university green-text text-darken-4"></i></h1>
+          <p class="quiz_score flow-text">
+            You got <span class="rawScore">23</span> out of <span class="total_question">100</span> questions right<br> You
+            scored
+            <u>23%</u>
+          </p>
+          <br>
+          <p class="center">
+            <a href="./start_exam.html" class="green btn waves-effect waves-light">Try again</a>
+            <button class="green btn waves-effect waves-light">Share <i class="icon ion-android-share-alt"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

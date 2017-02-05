@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Learn2Succeed</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lime">
+  <ul id="slide-out" class="grey lighten-5 side-nav">
+    <li>
+      <div class="userView">
+        <a id="bhk" href="#!user"><i class="icon ion-person"></i></a>
+        <a id="bhl" href="#!name"><span class="blue-grey-text name text-darken-4">John Doe</span></a>
+        <a href="#!" id="bhm"><span class="blue-grey-text text-darken-4">Rank: 325</span></a>
+      </div>
+    </li>
+    <li><a id="go_home" class="waves-effect" href="#!"><i class="icon left ion-ios-home"></i>Home</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a id="show_profile" class="waves-effect" href="#!"><i class="icon left ion-bowtie"></i> View Profile</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a id="show_leaderboard" class="waves-effect" href="#!"><i class="icon left ion-android-arrow-up"></i>Leaderboard</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a id="show_settings" class="waves-effect" href="#!"><i class="icon left ion-android-settings"></i>Settings</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="waves-effect" id="user_logout" href="#!"><i class="icon left ion-ios-unlocked"></i>Logout</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+  </ul>
+  <div id="auth_splash" class="animated row">
+    <div class="navbar-fixed">
+      <nav class="amber darken-4">
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo">
+            <i class="icon ion-university left"></i> Learn2Succeed
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="col s12">
+      <div class="card-panel shift-top">
+        <h5 id="login_header" class="center teal-text darken-4">
+          <span class="waves-effect active">Login</span>
+          <span class="waves-effect">Register</span>
+          <br>
+          <br>
+          <div id="login_box" class="animated fadeInUp">
+            <form class="row" onsubmit="do_login(); return false;">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="username@provider.com" id="email_login" type="text" class="validate" required>
+                  <label for="email_login" style="font-size: 1.2rem;">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <input placeholder="Password" id="password_login" type="password" class="validate" required>
+                  <label for="password_login" style="font-size: 1.2rem;">Password</label>
+                </div>
+                <button class="btn-large pink col offset-s s11 container waves-effect waves-light" style="    margin-left: 3.333333%;width: 93.666667%;    margin-bottom: 2rem;">
+                                  <i class="icon loading-icon hide fa fa-spinner fa-pulse fa-2x fa-fw white-text"></i>
+                                  login
+                              </button>
+                <p class="flow-text pink-text center-align">forgot Password?</p>
+              </div>
+            </form>
+          </div>
+          <div id="signup_box" class="hide animated fadeOutLeft">
+            <form class="row" onsubmit="do_signUp(); return false;">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="e.g: Ismail John" id="fullname_signup" type="text" class="validate" required>
+                  <label for="fullname_signup" style="font-size: 1.2rem;">Fullname</label>
+                </div>
+                <div class="input-field col s12">
+                  <input placeholder="username@provider.com" id="email_signup" type="text" class="validate" required>
+                  <label for="email_signup" style="font-size: 1.2rem;">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <input placeholder="Password" id="password_signup" type="password" class="validate" required>
+                  <label for="password_signup" style="font-size: 1.2rem;">Password</label>
+                </div>
+                <button class="btn-large pink col offset-s s11 container waves-effect waves-light" style="    margin-left: 3.333333%;width: 93.666667%;    margin-bottom: 2rem;">
+                                  <i class="icon loading-icon hide fa fa-spinner fa-pulse fa-2x fa-fw white-text"></i>
+                                  Register now
+                              </button>
+                <p id="login_instead" class="waves-effect flow-text pink-text center-align">Login instead</p>
+              </div>
+            </form>
+          </div>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <section id="main_app_body" class="animated hide row">
+    <div class="navbar-fixed">
+      <nav class="amber darken-4">
+        <div class="nav-wrapper container">
+          <a href="#" data-activates="slide-out" class="left button-collapse"><i class="icons ion-navicon"></i></a>
+          <a href="#!" class="brand-logo">
+            <i class="icon ion-university left"></i> Learn2Succeed
+          </a>
+        </div>
+      </nav>
+    </div>
+    <section id="home_view" class="animated row view">
+      <nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.5rem;">Please select your exam</a>
+      </nav>
+      <div class="row" id="exams-cards">
+        <div class="col s6">
+          <a id="select_jamb_from_home" class="blue-grey-text text-darken-2" href="#!">
+            <div class="card waves-effect center-align">
+              <img src="./images/JAMB-Logo.png" alt="WAEC" class="responsive-img" style="width: 8rem;">
+              <h5>JAMB</h5>
+              <p>1985 - 2016</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s6">
+          <a id="select_waec_from_home" class="blue-grey-text text-darken-2" href="#!">
+            <div class="card waves-effect center-align">
+              <img src="./images/Waec_logo.png" alt="WAEC" class="responsive-img" style="width: 6.8rem;">
+              <h5>WAEC</h5>
+              <p>1980 - 2016</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s6" style="float: right;">
+          <a id="" class="blue-grey-text text-darken-2" href="#!">
+            <div class="card waves-effect center-align">
+              <img src="./images/JAMB-Logo.png" alt="WAEC" class="responsive-img" style="width: 8rem;">
+              <h5>JAMB</h5>
+              <p>1985 - 2016</p>
+            </div>
+          </a>
+        </div>
+        <div class="col s6">
+          <a id="" class="blue-grey-text text-darken-2" href="#!">
+            <div class="card waves-effect center-align">
+              <img src="./images/Waec_logo.png" alt="WAEC" class="responsive-img" style="width: 6.8rem;">
+              <h5>WAEC</h5>
+              <p>1980 - 2016</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="userProfile_view" class="animated hide row view">
+      <nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.7rem;">Profile</a>
+      </nav>
+      <div class="row card-panel">
+        <div class="col s12">
+          <div class="profile_pic circle blue-grey lighten-5 left">
+            <i class="icon ion-person"></i>
+          </div>
+          <div class="user_rank right">
+            <p class="flow-text">Rank: 101</p>
+            <p class="flow-text">Points: 302</p>
+          </div>
+        </div>
+        <h5 class="center-align" style="font-size: 1.4rem;" id="fullname_on_profile_view">Ajala Abdul-Samii</h5>
+        <p class="flow-text">i dunno what else to cook a as story here ng ratione beatae odit incidunt repellendus voluptas est eum tenetur.</p>
+      </div>
+    </section>
+    <section id="settings_view" class="animated hide row view">
+      <nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.7rem;">Settings</a>
+      </nav>
+      <div class="row card-panel">
+        <!--thing ka-->
+      </div>
+    </section>
+    <section id="leaderboard_view" class="row hide animated view">
+      <nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.7rem;">Leaderboard</a>
+      </nav>
+      <div class="row card">
+        <table class="centered highlight responsive bordered striped col s12">
+          <thead>
+            <tr>
+              <th data-field="id">S/N</th>
+              <th data-field="name">Name</th>
+              <th data-field="price">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ibrahim Issa</td>
+              <td>1024</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>John Ayo</td>
+              <td>887</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Chuka Emeka</td>
+              <td>800</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Ibrahim Issa</td>
+              <td>788</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>John Ayo</td>
+              <td>750</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Chuka Emeka</td>
+              <td>745</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>John Ayo</td>
+              <td>667</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Chuka Emeka</td>
+              <td>622</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Ibrahim Issa</td>
+              <td>598</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>John Ayo</td>
+              <td>421</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section id="select_jamb_subject_view" class="animated hide row view">
+      <!--<nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.7rem;">JAMB</a>
+      </nav>-->
+      <div class="row" id="jamb-selected">
+        <div class="col s12">
+          <div class="card-panel center">
+            <img src="images/JAMB-Logo.png" alt="JAMB" class="center" style="width: 8rem;margin: auto;display: block;">
+            <h4>JAMB</h4>
+            <h5 class="flow-text">Past Questions</h5>
+            <form>
+              <select>
+            <option value="" disabled selected>Select Subject</option>
+            <option value="1">Chemistry</option>
+            <option value="2">Physics</option>
+            <option value="3">Biology</option>
+            <option value="3">Mathematics</option>
+            <option value="3">English</option>
+          </select>
+              <select>
+            <option value="" disabled selected>Select Year</option>
+            <option value="1">1999</option>
+            <option value="2">2000</option>
+            <option value="3">2001</option>
+            <option value="3">2002</option>
+            <option value="3">2003</option>
+          </select>
+              <p class="flow-text center-align">
+                This is a multiple choice test. There are 100 question and you have 60 minutes
+                <br>
+                <u>Best of Luck</u>
+              </p>
+              <a id="startJamb" href="#!" class="btn green waves-effect waves-light">Start exam now</a>
+              <br>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="jamb_inProgress_view" class="animated hide row view" style="display: inline">
+      <div class="row">
+        <div class="col s12 shift-top">
+          <div class="card">
+            <div class="card-menu row">
+              <h5 class="left">WAEC | Biology &nbsp;
+                <span class="question_sn">(1/100)</span>
+              </h5>
+              <div class="right timer_indicator">
+                <i class="icon ion-ios-time"></i>
+                <p>60:00:19</p>
+              </div>
+            </div>
+            <div class="card-content live-question">
+              <form name="jamb_1999_biology_1" onsubmit="return false;">
+                <p class="flow-text">Which of these animals if refered to as an amphibian?</p>
+                <br>
+                <p>
+                  <input name="group1" type="radio" id="optionA" value="Fish" />
+                  <label for="optionA">Fish</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="optionB" val="Snake" />
+                  <label for="optionB">Snake</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="optionC" val="Crocodile" />
+                  <label for="optionC">Crocodile</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="optionD" val="Lizard" />
+                  <label for="optionD">Lizard</label>
+                </p>
+                <br>
+                <p class="question_actions center">
+                  <button class="btn purple disabled waves-effect waves-light">Previous</button>
+                  <a id="nextQuestion" href="#!" class="btn purple waves-effect waves-light">Next</a>
+                  <a id="submitExam" href="#!" class="btn purple waves-effect waves-light">End</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="exam_summary_view" class="animated hide row view">
+      <nav class="white" <div class="nav-wrapper">
+        <a class="brand-logo green-text text-darken-3" style="font-size: 1.7rem;">Summary</a>
+      </nav>
+      <div class="row" id="exam-selected">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content center">
+              <p class="flow-text quiz_comment">
+                Well done!
+                <br> With more practice, You can perform better!
+              </p>
+              <h1 class="withLogo center"><i class="icon ion-university green-text text-darken-4"></i></h1>
+              <p class="quiz_score flow-text">
+                You got <span class="rawScore">23</span> out of <span class="total_question">100</span> questions right<br>                You scored
+                <u>23%</u>
+              </p>
+              <br>
+              <p class="center">
+                <a id="startAgain" href="#!" class="green btn waves-effect waves-light">Try again</a>
+                <button class="green btn waves-effect waves-light">Share <i class="icon ion-android-share-alt"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+  </section>
+  <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
+<!--
+home_view, leaderboard_view, userProfile_view
+
+-->

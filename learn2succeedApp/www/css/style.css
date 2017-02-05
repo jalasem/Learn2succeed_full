@@ -1,0 +1,185 @@
+body {
+  padding-top: 2rem;
+}
+section.view {
+  padding-top: 2rem;
+}
+/*auth splash*/
+
+#login_header span {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  transition: all ease-in-out .3s;
+  border-bottom: 2px solid #00968f;
+}
+
+#login_header span.active {
+    border-bottom: 2px solid deeppink;
+    background: rgba(128, 128, 128, 0.08);
+}
+
+.input-field label {
+     text-align: left
+   }
+
+#login_instead {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin-top: -1rem;
+  border-bottom: 2px solid;
+}
+
+/*auth splash*/
+
+.navbar-fixed {
+    position: fixed;
+    margin-top: -2rem;
+    height: 56px;
+    z-index: 997;
+}
+
+nav .nav-wrapper.container {
+  width: 90%;
+}
+
+.row .col {
+  float: left;
+  box-sizing: border-box;
+  /*padding: 0 0.01rem 0 0.75rem;*/
+  min-height: 1px;
+}
+
+.card.waves-effect {
+  width: 100%;
+}
+
+.card img {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#bhk {
+  width: 3.4rem;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0px 14px 0px;
+  display: inline-block;
+  float: left;
+  height: 3.5rem;
+}
+
+#bhk i {
+  font-size: 2rem;
+}
+
+#bhl {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+#bhm {
+  float: right;
+  margin-right: 1rem;
+}
+
+.side-nav li>a>i,
+.side-nav li>a>[class^="mdi-"],
+.side-nav li>a>[class*="mdi-"],
+.side-nav li>a>i.material-icons {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 8px 0 0;
+  width: 24px;
+  font-size: 1.5rem;
+  color: #424242;
+}
+
+.side-nav .divider {
+  margin: 0px 0 0 0;
+}
+
+.card .card-menu {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-bottom: 2px solid rgba(205, 220, 57, 0.21);
+  margin-bottom: 0;
+}
+
+.card .card-menu h5 {
+  margin: 1.5rem 0.5rem 0;
+  color: #2e7d32;
+}
+
+.card .card-menu h5 span.question_sn {
+  font-size: 1rem;
+  font-family: 'Segoe UI';
+}
+
+.card-menu .timer_indicator {
+  display: block;
+  text-align: center;
+  color: #2E7D32 !important;
+}
+
+.card-menu .timer_indicator i.icon {
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.card-menu .timer_indicator i.icon+p {
+  line-height: 100%;
+  margin-top: 0rem;
+}
+
+.card .card-content.live-question {
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+}
+
+[type="radio"]:not(:checked)+label:before,
+[type="radio"]:not(:checked)+label:after,
+[type="radio"]:checked+label:before,
+[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:before,
+[type="radio"].with-gap:checked+label:after {
+  border-radius: 0%;
+}
+
+label {
+  color: black !important;
+}
+
+.question_actions .btn {
+  padding: 0 1.5rem;
+}
+
+h1.withLogo {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.btn {
+  text-transform: capitalize;
+}
+
+.profile_pic {
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile_pic i.icon {
+  font-size: 4rem;
+}
+
+.user_rank p.flow-text {
+  margin-right: 3rem;
+  line-height: 100%;
+}
+
+.shift-top {
+ margin-top: 2.5rem;
+}

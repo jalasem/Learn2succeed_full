@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Learn2Succeed</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lime">
+  <ul id="slide-out" class="grey lighten-5 side-nav">
+    <li>
+      <div class="userView">
+        <a id="bhk" href="#!user"><i class="icon ion-person"></i></a>
+        <a id="bhl" href="#!name"><span class="blue-grey-text name text-darken-4">John Doe</span></a>
+        <a href="#!" id="bhm"><span class="blue-grey-text text-darken-4">Rank: 325</span></a>
+      </div>
+    </li>
+    <li><a href="index.html"><i class="icon left ion-ios-home"></i>Home</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="profile.html"><i class="icon left ion-bowtie"></i> View Profile</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="./leaderboard.html"><i class="icon left ion-android-arrow-up"></i>Leaderboard</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a href="#!"><i class="icon left ion-android-settings"></i>Settings</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav class="amber darken-4">
+      <div class="nav-wrapper container">
+        <a href="#" data-activates="slide-out" class="left button-collapse"><i class="icons ion-navicon"></i></a>
+        <a href="index.html" class="brand-logo">
+          <i class="icon ion-university left"></i> Learn2Succeed
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class="row" id="jamb-selected">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-menu row">
+          <h5 class="left">WAEC | Biology &nbsp;
+            <span class="question_sn">(1/100)</span>
+          </h5>
+          <div class="right timer_indicator">
+            <i class="icon ion-ios-time"></i>
+            <p>60:00:19</p>
+          </div>
+        </div>
+        <div class="card-content live-question">
+          <form name="jamb_1999_biology_1" onsubmit="return false;">
+            <p class="flow-text">Which of these animals if refered to as an amphibian?</p>
+            <br>
+            <p>
+              <input name="group1" type="radio" id="optionA" value="Fish" />
+              <label for="optionA">Fish</label>
+            </p>
+            <p>
+              <input name="group1" type="radio" id="optionB" val="Snake" />
+              <label for="optionB">Snake</label>
+            </p>
+            <p>
+              <input name="group1" type="radio" id="optionC" val="Crocodile" />
+              <label for="optionC">Crocodile</label>
+            </p>
+            <p>
+              <input name="group1" type="radio" id="optionD" val="Lizard" />
+              <label for="optionD">Lizard</label>
+            </p>
+            <br>
+            <p class="question_actions center">
+              <button class="btn purple disabled waves-effect waves-light">Previous</button>
+              <a href="quizPage.html" class="btn purple waves-effect waves-light">Next</a>
+              <a href="quizEnd.html" class="btn purple waves-effect waves-light">End</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
